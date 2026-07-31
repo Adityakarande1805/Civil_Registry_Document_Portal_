@@ -1,0 +1,172 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="User_UserMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+	
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            border-style: solid;
+            border-width: 1px;
+        }
+        .style2
+        {
+            height: 31px;
+        }
+        .style4
+        {
+            text-align: center;
+        }
+        .style6
+        {
+            height: 33px;
+            text-align: right;
+        }
+        .style7
+        {
+            font-size: x-large;
+            color: #800000;
+        }
+        .style8
+        {
+            color: #800000;
+        }
+        .style9
+        {
+            width: 100%;
+        }
+        .style5
+        {
+            font-size: medium;
+            background-color: #990000;
+        }
+        .style12
+        {
+            width: 100%;
+            height: 27px;
+            background-color: #990000;
+        }
+        .style13
+        {
+            font-size: xx-large;
+            color: #800000;
+        }
+        .style14
+        {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+  
+    <form id="form1" runat="server">
+    
+    <table align="center" cellpadding="0" class="style1" cellspacing="0" 
+        style="font-family: 'Century Gothic'">
+        <tr>
+            <td>
+                <strong>&nbsp;&nbsp;<span class="style13">CIVIL REGISTRATION</span><span class="style7"><asp:Button 
+                    ID="Button1" runat="server" AccessKey="a" BackColor="White" 
+                    BorderStyle="None" ForeColor="White" PostBackUrl="~/Admin/AdminLogin.aspx" 
+                    Text="Button" />
+                </span></strong></td>
+            <td color: #FF6600" 
+                class="style6">
+                <table align="right" cellpadding="3">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image1" runat="server" Height="40px" 
+                                ImageUrl="~/Images/Right-Serve.png" Width="40px" />
+                        </td>
+                        <td class="style8">
+                            
+                            <strong>YOUR SERVICE IS OUR DUTY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </strong></td>
+                        <td class="style8">
+                            
+                            <asp:Image ID="Image3" runat="server" Height="25px" 
+                                ImageUrl="~/Images/edit-user-xl.png" Width="25px" />
+                        </td>
+                        <td class="style8">
+                            
+                            <asp:HyperLink ID="HyperLink1" runat="server" Font-Bold="True"  style="text-decoration:none;"
+                                ForeColor="#003366" NavigateUrl="~/User/Login.aspx">Citizen Login</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+                          </td>
+        </tr>
+        <tr>
+            <td class="style4" colspan="2">
+                <table align="center" cellpadding="0" cellspacing="0" class="style9">
+                    <tr>
+                        <td bgcolor="#990000">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;</td>
+                        <td bgcolor="#990000">
+                            <asp:Image ID="Image2" runat="server" Height="20px" 
+                                ImageUrl="~/Images/home-xl.png" Width="20px" />
+                        </td>
+                        <td bgcolor="#990000" class="style14">
+                <asp:Menu ID="Menu1" runat="server" BackColor="#990000" Font-Bold="True" 
+                    ForeColor="White" Height="35px" Orientation="Horizontal" RenderingMode="Table" 
+                    StaticEnableDefaultPopOutImage="False" Width="100%" 
+                    style="margin-top: 0px" CssClass="style5">
+                    <DynamicMenuItemStyle BackColor="#990000" HorizontalPadding="10px" 
+                        VerticalPadding="5px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/User/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="About" Value="About" NavigateUrl="~/User/About.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Forms" Value="Forms">
+                            <asp:MenuItem Text="Birth Certificate" Value="Birth Certificate" 
+                                NavigateUrl="~/User/BirthCertificate.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Death Certificate" Value="Death Certificate" 
+                                NavigateUrl="~/User/DeathCertificate.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Marriage Certificate" Value="Marriage Certificate" 
+                                NavigateUrl="~/User/MarriageCertificate.aspx">
+                            </asp:MenuItem>
+                            <asp:MenuItem Text="Pan Card" Value="Pan Card" 
+                                NavigateUrl="~/User/PanCard.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Voter Id" Value="Voter Id" 
+                                NavigateUrl="~/User/VoterId.aspx"></asp:MenuItem>
+                            <asp:MenuItem Text="Adhaar card" Value="Adhaar card" 
+                                NavigateUrl="~/User/AdhaarCard.aspx"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Feedback" Value="Feedback" 
+                            NavigateUrl="~/User/Feedback.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Contact" Value="Contact" NavigateUrl="~/User/Enquiry.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                        </td>
+                        <td bgcolor="#990000">
+                            &nbsp;</td>
+                        <td bgcolor="#990000">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="2">
+                <marquee style="text-align:left; color:#FFFFFF; " 
+                    behavior="alternate" scrollamount="10" class="style12">Project By: Aditya, Nikhil & Sujay</marquee></td>
+        </tr>
+    </table>
+    </form>
+  
+</body>
+</html>
