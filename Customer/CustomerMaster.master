@@ -1,0 +1,185 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMaster.master.cs" Inherits="Customer_CustomerMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title> <link rel="stylesheet" type="text/css" href="../engine1/style.css" />
+	<script type="text/javascript" src="../engine1/jquery.js"></script>
+	
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            border: 1px solid #000000;
+        }
+        .style2
+        {
+       
+        }
+        .style13
+        {
+            font-size: xx-large;
+            color: #800000;
+        }
+        .style7
+        {
+        
+          
+        }
+        .style6
+        {
+            height: 33px;
+            text-align: right;
+        }
+        .style8
+        {
+            color: #800000;
+        }
+        .style4
+        {
+            text-align: center;
+        }
+        .style9
+        {
+            width: 100%;
+        }
+        .style14
+        {
+            text-align: left;
+        }
+        .style5
+        {
+            font-size: medium;
+            background-color: #990000;
+        }
+        .style12
+        {
+            width: 100%;
+            height: 27px;
+            background-color: #990000;
+        }
+        </style>
+</head>
+<body>
+  
+    <form id="form2" runat="server">
+    
+    <table align="center" cellpadding="0" class="style1" cellspacing="0" 
+        style="font-family: 'Century Gothic'">
+        <tr>
+            <td>
+                <strong>&nbsp;&nbsp;<span class="style13">CIVIL REGISTRATION</span><span class="style7"><asp:Button ID="Button1" runat="server" AccessKey="u" BackColor="White" 
+                    BorderStyle="None" ForeColor="White" PostBackUrl="~/Admin/AdminLogin.aspx" 
+                    Text="Button" />
+                </span></strong></td>
+            <td color: #FF6600" 
+                class="style6">
+                <table align="right" cellpadding="3">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image4" runat="server" Height="40px" 
+                                ImageUrl="~/Images/Right-Serve.png" Width="40px" />
+                        </td>
+                        <td class="style8">
+                            
+                            <strong>YOUR SERVICE IS OUR DUTY&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            </strong></td>
+                        <td class="style8">
+                            
+                            <asp:Image ID="Image3" runat="server" Height="25px" 
+                                ImageUrl="~/Images/edit-user-xl.png" Width="25px" />
+                        </td>
+                        <td class="style8">
+                            
+                            Welcome&nbsp;&nbsp;&nbsp; <strong>
+                <asp:Label ID="Label1" runat="server" Text="Label" ForeColor="#FF9900" 
+                    style="color: #000000"></asp:Label>
+                            </strong>&nbsp;
+                        </td>
+                    </tr>
+                </table>
+                          </td>
+        </tr>
+        <tr>
+            <td class="style4" colspan="2">
+                <table align="center" cellpadding="0" cellspacing="0" class="style9">
+                    <tr>
+                        <td bgcolor="#990000">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;</td>
+                        <td bgcolor="#990000">
+                            <asp:Image ID="Image5" runat="server" Height="20px" 
+                                ImageUrl="~/Images/home-xl.png" Width="20px" />
+                        </td>
+                        <td bgcolor="#990000" class="style14">
+                <asp:Menu ID="Menu2" runat="server" BackColor="#990000" Font-Bold="True" 
+                    ForeColor="White" Height="35px" Orientation="Horizontal" RenderingMode="Table" 
+                    StaticEnableDefaultPopOutImage="False" Width="100%" 
+                    style="margin-top: 0px" CssClass="style5">
+                    <DynamicMenuItemStyle BackColor="#990000" HorizontalPadding="10px" 
+                        VerticalPadding="5px" />
+                    <Items>
+                        <asp:MenuItem Text="Home" Value="Home" NavigateUrl="~/Customer/Home.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="My Profile" Value="My Profile" 
+                            NavigateUrl="~/Customer/MyProfile.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Certificates" Value="Certificates">
+                            <asp:MenuItem NavigateUrl="~/Customer/AdhaarCard.aspx" Text="Adhaar Card" 
+                                Value="Adhaar Card"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/BirthCertificate.aspx" 
+                                Text="Birth Certificate" Value="Birth Certificate"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/DeathCertificate.aspx" 
+                                Text="Death Certificate" Value="Death Certificate"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/MarriageCertificate.aspx" 
+                                Text="Marriage Certificate" Value="Marriage Certificate"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/Pancard.aspx" Text="Pancard" 
+                                Value="Pancard"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/Voterid.aspx" Text="voterid" 
+                                Value="voterid"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Feedback" Value="Feedback" 
+                            NavigateUrl="~/Customer/Feedback.aspx"></asp:MenuItem>
+                        <asp:MenuItem Text="Report" Value="Report">
+                            <asp:MenuItem NavigateUrl="~/Customer/Adhaar Card Report.aspx" 
+                                Text="Adhaar Card Report" Value="Adhaar Card Report"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/BirthCertificateReport.aspx" 
+                                Text="Birth Certificate Report" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/DeathCertificateReport.aspx" 
+                                Text="Death Certificate Report" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/MarriageCertificateReport.aspx" 
+                                Text="Marriage Certificate Report" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/PanCardReport.aspx" 
+                                Text="Pan Card Report" Value="New Item"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Customer/VoterIdReport.aspx" 
+                                Text="Voter Id Report" Value="New Item"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Logout" Value="Logout" NavigateUrl="~/User/Home.aspx"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                        </td>
+                        <td bgcolor="#990000">
+                            &nbsp;</td>
+                        <td bgcolor="#990000">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="2">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td class="style2" colspan="2">
+                <marquee style="text-align:left; color:#FFFFFF; " 
+                    behavior="alternate" scrollamount="10" class="style12">Project By: Aditya, Nikhil & Sujay</marquee></td>
+        </tr>
+    </table>
+    </form>
+  
+    </body>
+</html>

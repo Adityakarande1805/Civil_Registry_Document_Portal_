@@ -1,0 +1,341 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMaster.master.cs" Inherits="Admin_AdminMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            border: 1px solid #000000;
+            height: 75px;
+        }
+        .style5
+        {
+            width: 134px;
+            font-weight: normal;
+        }
+        .style6
+        {
+            width: 263px;
+            font-weight: 700;
+            font-size: large;
+            background-color: #3399FF;
+        }
+        .style7
+        {
+            width: 259px;
+            height: 316px;
+        }
+        .style8
+        {
+            width: 122px;
+            height: 35px;
+            background-color: #3399FF;
+        }
+        .style9
+        {
+            height: 316px;
+        }
+        .style14
+        {
+            width: 263px;
+            font-weight: 700;
+            font-size: large;
+            height: 25px;
+            background-color: #3399FF;
+        }
+        .style15
+        {
+            width: 263px;
+            font-weight: 700;
+            font-size: large;
+            height: 24px;
+            background-color: #3399FF;
+        }
+        .style16
+        {
+            width: 122px;
+            height: 24px;
+            background-color: #3399FF;
+        }
+        .style17
+        {
+            width: 122px;
+            height: 26px;
+            background-color: #3399FF;
+        }
+        .style18
+        {
+            width: 293px;
+            font-weight: 700;
+            font-size: large;
+            height: 26px;
+            background-color: #3399FF;
+        }
+        .style19
+        {
+            font-size: medium;
+            color: #000000;
+            text-decoration: none;
+        }
+        .style20
+        {
+            width: 61px;
+        }
+        .style21
+        {
+            width: 293px;
+            font-weight: 700;
+            font-size: large;
+            height: 24px;
+            background-color: #3399FF;
+        }
+        .style22
+        {
+            width: 293px;
+            font-weight: 700;
+            font-size: large;
+            height: 35px;
+            background-color: #3399FF;
+        }
+        .style23
+        {
+            width: 100%;
+        }
+        .style13
+        {
+            font-size: xx-large;
+            color: #FFFFFF;
+        }
+        .style24
+        {
+            width: 100%;
+            border: 1px solid #000000;
+            height: 75px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .style25
+        {
+            font-size: x-large;
+            color: #FFFFFF;
+        }
+        .style26
+        {
+            text-decoration: none;
+        }
+        .style27
+        {
+            color: #000000;
+            text-decoration: none;
+        }
+        .style28
+        {
+            background-color: #006666;
+        }
+    </style>
+</head>
+<body>
+    
+    <form id="form1" runat="server">
+    <table align="center" cellpadding="0" cellspacing="0" class="style24">
+        <tr>
+            <td colspan="2">
+             <table align="center" cellpadding="5" cellspacing="0" class="style23">
+                    <tr>
+                        <td bgcolor="#006666">
+                            &nbsp;&nbsp;&nbsp;
+                <strong><span class="style13">CIVIL REGISTRATION</span></strong>&nbsp;</td>
+                        <td bgcolor="#006666">
+                            &nbsp;</td>
+                        <td bgcolor="#006666">
+                            &nbsp;</td>
+                        <td bgcolor="#006666">
+                            
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                            &nbsp;</td>
+                        <td bgcolor="#006666">
+                            
+                            <asp:Image ID="Image14" runat="server" Height="25px" 
+                                ImageUrl="~/Images/edit-user-xl.png" Width="25px" />
+                        </td>
+                        <td class="style25" bgcolor="#006666">
+                            <strong>ADMIN PANEL</strong></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style7" valign="top">
+                
+                <table align="center" cellpadding="3" cellspacing="0" class="style1" 
+                    bgcolor="#3399FF" width="350">
+                    <tr>
+                        <td colspan="2" class="style14" style="font-weight: 700; font-size: large">
+                            &nbsp;&nbsp;
+                            <asp:HyperLink ID="HyperLink1" runat="server" Height="25px" Width="200px" 
+                                ForeColor="Black" NavigateUrl="~/Admin/Home.aspx" CssClass="style26">Home Page</asp:HyperLink>
+                          
+                            <hr style="width: 235px; height: -15px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="style15" style="font-weight: 700">
+                            <asp:HyperLink ID="HyperLink2" runat="server" Height="16px" 
+                                style="font-size: large" Width="200px">Manage Forms</asp:HyperLink>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style6" colspan="2">
+                            <table align="center" cellpadding="0" cellspacing="0" class="style1">
+                                <tr>
+                                    <td class="style20">
+                                        <asp:Image ID="Image3" runat="server" Height="38px" 
+                                            ImageUrl="~/Images/adhar.png" Width="39px" />
+                                    </td>
+                                    <td class="style5">
+                                        <asp:HyperLink ID="HyperLink7" runat="server" 
+                                            NavigateUrl="~/Admin/Adhaarcard.aspx" style="font-size: medium" 
+                                            CssClass="style27">Adhaar Card</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style20">
+                                        <asp:Image ID="Image4" runat="server" Height="37px" 
+                                            ImageUrl="~/Images/Birth_Certificate.png" Width="39px" />
+                                    </td>
+                                    <td class="style5">
+                                        <asp:HyperLink ID="HyperLink8" runat="server" CssClass="style19" 
+                                            NavigateUrl="~/Admin/BirthCertificate.aspx">Birth Certificate</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style20">
+                                        <asp:Image ID="Image5" runat="server" Height="37px" 
+                                            ImageUrl="~/Images/death certificate.png" Width="39px" />
+                                    </td>
+                                    <td class="style5">
+                                        <asp:HyperLink ID="HyperLink9" runat="server" CssClass="style19" 
+                                            NavigateUrl="~/Admin/DeathCertificate.aspx">Death Certificate</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style20">
+                                        <asp:Image ID="Image6" runat="server" Height="36px" 
+                                            ImageUrl="~/Images/Marriage-License-512.png" Width="39px" />
+                                    </td>
+                                    <td class="style5">
+                                        <asp:HyperLink ID="HyperLink10" runat="server" CssClass="style19" 
+                                            NavigateUrl="~/Admin/MarriageCertificate.aspx">Marriage Certificate</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style20">
+                                        <asp:Image ID="Image8" runat="server" Height="37px" 
+                                            ImageUrl="~/Images/pan2.png" Width="39px" />
+                                    </td>
+                                    <td class="style5">
+                                        <asp:HyperLink ID="HyperLink12" runat="server" CssClass="style19" 
+                                            NavigateUrl="~/Admin/PanCard.aspx">Pan Card</asp:HyperLink>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="style20">
+                                        <asp:Image ID="Image7" runat="server" Height="37px" 
+                                            ImageUrl="~/Images/voter id.png" Width="39px" />
+                                    </td>
+                                    <td class="style5">
+                                        <asp:HyperLink ID="HyperLink11" runat="server" CssClass="style19" 
+                                            NavigateUrl="~/Admin/VoterCard.aspx">Voter Card</asp:HyperLink>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style16">
+                            <asp:Image ID="Image9" runat="server" Height="37px" 
+                                ImageUrl="~/Images/pan2.png" Width="39px" />
+                            </td>
+                        <td class="style21">
+                            <asp:HyperLink ID="HyperLink3" runat="server" 
+                                NavigateUrl="~/Admin/ManageCustomer.aspx" style="color: #000000" 
+                                CssClass="style26">Manage Customer</asp:HyperLink>
+                            <br />
+                            <hr style="height: -12px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style17">
+                            <asp:Image ID="Image10" runat="server" Height="37px" 
+                                ImageUrl="~/Images/pan2.png" Width="39px" />
+                            </td>
+                        <td class="style18">
+                            <asp:HyperLink ID="HyperLink4" runat="server" 
+                                NavigateUrl="~/Admin/ViewFeedback.aspx" style="color: #000000" 
+                                CssClass="style26">View Feedback</asp:HyperLink>
+                            <br />
+                            <hr style="height: -12px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style16">
+                            <asp:Image ID="Image11" runat="server" Height="37px" 
+                                ImageUrl="~/Images/pan2.png" Width="39px" />
+                            </td>
+                        <td class="style21">
+                            <asp:HyperLink ID="HyperLink5" runat="server" 
+                                NavigateUrl="~/Admin/ManageAdmin.aspx" style="color: #000000" 
+                                CssClass="style26">Change Password</asp:HyperLink>
+                            <br />
+                            <hr style="height: -12px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style8">
+                            <asp:Image ID="Image12" runat="server" Height="37px" 
+                                ImageUrl="~/Images/pan2.png" Width="39px" />
+                        </td>
+                        <td class="style22">
+                            <asp:HyperLink ID="HyperLink6" runat="server" 
+                                style="font-weight: 700; color: #000000;" 
+                                NavigateUrl="~/Admin/Report.aspx" CssClass="style26">Report</asp:HyperLink>
+                            <br />
+                            <hr style="height: -12px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style8">
+                            <asp:Image ID="Image15" runat="server" Height="37px" 
+                                ImageUrl="~/Images/pan2.png" Width="39px" />
+                        </td>
+                        <td class="style22">
+                            <asp:HyperLink ID="HyperLink13" runat="server" 
+                                style="font-weight: 700; color: #000000;" NavigateUrl="~/User/Home.aspx" 
+                                CssClass="style26">Logout</asp:HyperLink>
+                        </td>
+                    </tr>
+                </table>
+                
+            </td>
+            <td class="style9">
+                
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <marquee style="text-align:left; width:100%; color:#FFFFFF; " 
+                    behavior="alternate" scrollamount="10" height=25px class="style28">Project By : Aditya, Nikhil & Sujay</marquee></td>
+        </tr>
+    </table>
+    </form>
+    
+</body>
+</html>
